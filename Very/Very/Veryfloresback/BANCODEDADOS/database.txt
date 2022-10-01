@@ -1,0 +1,18 @@
+BANCO DE DADOS VERY_FLORES EM SQLSERVER
+
+create database VeryFlores;
+
+use VeryFlores;
+
+CREATE TABLE usuario (
+    idUser int identity (1,1) PRIMARY KEY NOT NULL,
+    nomeUser varchar (40) unique NOT NULL,
+    emailUser varchar (30) NOT NULL,
+    senhaUser varchar (30) NOT NULL,
+    dtNasc varchar (10),
+    nivelUser int NOT NULL,
+    statusUser int,
+    dataInsert varchar (10),
+    dataUpdate varchar (10),
+);
+
